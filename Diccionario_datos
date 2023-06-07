@@ -1,0 +1,22 @@
+Medio de prensa
+↳Nombre_Medio VARCHAR(50)
+ Ciudad VARCHAR(20)
+ Región VARCHAR(20)
+ País VARCHAR(10)
+ Continente VARCHAR (20)
+ Año_Fundacion YEAR
+ Cobertura (internacional, nacional, local) VARCHAR (15)
+ Nombre_Fundadores VARCHAR(100)
+ Redes_Sociales VARCHAR (2000)
+ ultima_actualizacion_followers DATE
+ sitio_web VARCHAR (500)
+ Ejemplo_Noticia 
+ ↳URL_Noticia VARCHAR (500)
+  Fecha_Noticia DATE
+  Titulo_noticia VARCHAR (200)
+  Contenido_Noticia TEXT
+ ↳Categoria
+  Nombre_Categoria VARCHAR (20)
+  URL_Categoria varchar (500)
+  
+ 
