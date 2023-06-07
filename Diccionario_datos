@@ -1,22 +1,66 @@
 Medio de prensa
-↳Nombre_Medio VARCHAR(50) (Nombre del medio de prensa)
- Ciudad VARCHAR(20) (Ciudad del medio de prensa)
- Región VARCHAR(20) (Región del medio de prensa)
- País VARCHAR(10) (País del medio de prensa)
- Continente VARCHAR (20) (Continente del medio de prensa)
- Año_Fundacion YEAR (Año de fundación del medio de prensa)
- Cobertura VARCHAR (15) (Cobertura del medio de prensa internacional, nacional, local)
- Nombre_Fundadores VARCHAR(100) (Nombre de los fundadores del medio de prensa)
- Redes_Sociales VARCHAR (2000) (Redes sociales del medio de prensa Facebook, Instagram, Twitter)
- ultima_actualizacion_followers DATE (Ultima actualizacion de seguidores del medio de prensa)
- sitio_web VARCHAR (500) (Sitio web del medio de prensa)
+↳Nombre_Medio VARCHAR(50) (Nombre del medio de prensa) OBLIGATORIO: SI
+ Ciudad VARCHAR(20) (Ciudad del medio de prensa) OBLIGATORIO: SI
+ Región VARCHAR(20) (Región del medio de prensa) OBLIGATORIO: SI
+ País VARCHAR(10) (País del medio de prensa) OBLIGATORIO: SI
+ Continente VARCHAR (20) (Continente del medio de prensa) OBLIGATORIO: SI
+ Año_Fundacion YEAR (Año de fundación del medio de prensa) OBLIGATORIO: SI
+ Cobertura VARCHAR (15) (Cobertura del medio de prensa internacional, nacional, local) OBLIGATORIO: SI
+ Nombre_Fundadores VARCHAR(100) (Nombre de los fundadores del medio de prensa) OBLIGATORIO: SI 
+ Redes_Sociales VARCHAR (2000) (Redes sociales del medio de prensa Facebook, Instagram, Twitter) OBLIGATORIO: SI
+ ultima_actualizacion_followers DATE (Ultima actualizacion de seguidores del medio de prensa) OBLIGATORIO: SI
+ Numero_seguidores INT (Numero de seguidores en twitter) OBLIGATORIO: SI
+ sitio_web VARCHAR (500) (Sitio web del medio de prensa) OBLIGATORIO: SI
  Ejemplo_Noticia 
- ↳URL_Noticia VARCHAR (500) (Link de una noticia del medio de prensa)
-  Fecha_Noticia DATE (Fecha de publicación de la noticia)
-  Titulo_noticia VARCHAR (200) (Título de la noticia)
-  Contenido_Noticia TEXT (Contenido textual de la noticia)
+ ↳URL_Noticia VARCHAR (500) (Link de una noticia del medio de prensa) OBLIGATORIO: SI
+  Fecha_Noticia DATE (Fecha de publicación de la noticia) OBLIGATORIO: SI
+  Titulo_Noticia VARCHAR (200) (Título de la noticia) OBLIGATORIO: SI
+  Contenido_Noticia TEXT (Contenido textual de la noticia) OBLIGATORIO: SI
  ↳Categoria
-  Nombre_Categoria VARCHAR (20) (Nombre de la categoría; deportes, internacional, policial, etc.)
-  URL_Categoria varchar (500) (Link donde se encuentran las noticias de esa categoría)
+  Nombre_Categoria VARCHAR (20) (Nombre de la categoría; deportes, internacional, policial, etc.) OBLIGATORIO: SI
+  URL_Categoria varchar (500) (Link donde se encuentran las noticias de esa categoría) OBLIGATORIO: SI
   
- 
+VALORES DE EJEMPLO:
+Nombre_medio: La estrella de panamá
+Ciudad: Ciudad de panamá
+Región: Provincia de Panamá
+País: Panamá
+Continente: America
+Año_fundacion: 1849-02-24
+Cobertura: Internacional
+Nombre_fundadores:  J.B. Bidleman, S.K. Donaire, J.F. Bachman
+Redes_Sociales: https://www.facebook.com/LaEstrelladePanama/, https://www.instagram.com/laestrellaonline/, https://twitter.com/EstrellaOnline
+Ultima_actualizacion_followers: 2023-06-07
+Numero_seguidores: 320.420
+sitio_web: https://www.laestrella.com.pa
+URL_Noticia: https://www.laestrella.com.pa/nacional/230607/tribunal-disciplina-cd-abrego-traiciono
+Fecha_Noticia: 2023-06-07
+Titulo_Noticia: "Tribunal y disciplina de CD: Ábrego traicionó al partido"
+Contenido_Noticia: "El Tribunal de Honor y Disciplina de Cambió Democrático (CD) intenta por segunda ocasión expulsar a la precandidata Yanibel Ábrego.
+En la sentencia 01-23 del 2 de junio de 2023, publicada en el Boletín Electoral 5371-B, se sustenta la expulsión de Ábrego por traición al partido, 
+basada en el estatuto del partido en su artículo 134.La expulsión de Ábrego está avalada por tres de los cinco miembros del Tribunal de Honor. 
+Arturo Vallarino y Noriel Salerno, quienes son parte del tribunal, salvaron su voto y lo sustentaron.“Un presidente vencido y con miedo, 
+que no respeta el estatuto del partido decide sin legitimidad expulsarme de CD”, se defendió Ábrego, desde su cuenta de Twitter al conocerse la notificación
+en el Boletín Electoral.“La cobardía del tirano es tan grave que no sabe ya más que hacer para bajar mi candidatura y robar el derecho de la membresía a 
+escoger a sus representantes”, alegó la diputada y precandidata presidencial para las primarias del colectivo.La denunciaEl 7 de diciembre de 2022 
+Rafael Ponce presentó la denuncia en la cual pone en conocimiento al fiscal general del partido lo que para él es una serie de hechos que estima requerían
+ser investigados.La fiscalía de CD admitió la denuncia el 3 de enero de 2023.La denuncia para que se expulse a Ábrego está sustentada en que la diputada 
+públicamente estaba dando su apoyo y promoción a la figura de Ricardo Martinelli, miembro y presidente del partido Realizando Metas.El Tribunal de Honor
+de CD probó “la traición” de Ábrego por las publicaciones en la red social de la diputada, así como imágenes fotográficas y audiovisuales que demuestran una
+reiterada forma de actuar en el sentido de mostrar promoción, apego, apoyo, y colaboración política con partido y candidato distintos a los de CD.
+“Así entonces, queda acreditada con claridad diáfana que se realizaron actos donde confluyeron apodos y participaciones conjuntas de la honorable diputada 
+con otro partido político y candidato de colectivo distinto a Cambio Democrático, inclusive, en actividades o eventos del partido Cambio Democrático”,
+señala la resolución de expulsión de la diputada Ábrego.Salvamento de votoSalerno y Vallarino sustentan su desacuerdo con la decisión del tribunal, porque a
+“pesar de ser miembros del Tribunal, no hemos sido tomados en consideración para la redacción, revisión, firma ni publicación de las resoluciones dictadas”.
+“Desde el momento en que se admitió la demanda, hemos insistido en la designación de un sustanciador, de acuerdo con las disposiciones legales aplicables”,
+agregaron Salerno y Vallarino.Además, que en el proceso se aporta un dispositivo usb que se dice contiene algunas imágenes.
+“Esas presuntas fotografías o grabaciones no constan en el expediente. En virtud de ello, no es posible determinar el tiempo,
+modo y lugar en que se desarrollaron los hechos”, agregaron.La diputada Ábrego, quien es una de las precandidatas para la primaria del colectivo a realizarse
+el 9 de julio, invocó el fuero penal electoral, pero el tribunal precisó que para los procesos disciplinarios no aplica la coraza protectora.
+Sin embargo, Salerno y Vallarino son del criterio que se debió preguntar al Tribunal Electoral el alcance.La resolución de expulsión está basada en el 
+artículo 120 del Código Electoral que establece que las decisiones se podrán recurrir dentro de los cinco días hábiles para resolver.La decisión del partido
+agota la vía interna, y debe ser publicada en el Boletín Electoral por tres días hábiles.El afectado, en este caso la diputada Ábrego,
+tiene diez días hábiles después de la última publicación para recurrir ante los juzgados administrativos electorales, para garantizar una doble instancia
+con fundamento en la Ley 247."
+Nombre_Categoria: Nacional
+URL_categoria: https://www.laestrella.com.pa/nacional
