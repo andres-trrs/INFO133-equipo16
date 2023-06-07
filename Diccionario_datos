@@ -1,22 +1,22 @@
 Medio de prensa
-↳Nombre_Medio VARCHAR(50)
- Ciudad VARCHAR(20)
- Región VARCHAR(20)
- País VARCHAR(10)
- Continente VARCHAR (20)
- Año_Fundacion YEAR
- Cobertura (internacional, nacional, local) VARCHAR (15)
- Nombre_Fundadores VARCHAR(100)
- Redes_Sociales VARCHAR (2000)
- ultima_actualizacion_followers DATE
- sitio_web VARCHAR (500)
+↳Nombre_Medio VARCHAR(50) (Nombre del medio de prensa)
+ Ciudad VARCHAR(20) (Ciudad del medio de prensa)
+ Región VARCHAR(20) (Región del medio de prensa)
+ País VARCHAR(10) (País del medio de prensa)
+ Continente VARCHAR (20) (Continente del medio de prensa)
+ Año_Fundacion YEAR (Año de fundación del medio de prensa)
+ Cobertura VARCHAR (15) (Cobertura del medio de prensa internacional, nacional, local)
+ Nombre_Fundadores VARCHAR(100) (Nombre de los fundadores del medio de prensa)
+ Redes_Sociales VARCHAR (2000) (Redes sociales del medio de prensa Facebook, Instagram, Twitter)
+ ultima_actualizacion_followers DATE (Ultima actualizacion de seguidores del medio de prensa)
+ sitio_web VARCHAR (500) (Sitio web del medio de prensa)
  Ejemplo_Noticia 
- ↳URL_Noticia VARCHAR (500)
-  Fecha_Noticia DATE
-  Titulo_noticia VARCHAR (200)
-  Contenido_Noticia TEXT
+ ↳URL_Noticia VARCHAR (500) (Link de una noticia del medio de prensa)
+  Fecha_Noticia DATE (Fecha de publicación de la noticia)
+  Titulo_noticia VARCHAR (200) (Título de la noticia)
+  Contenido_Noticia TEXT (Contenido textual de la noticia)
  ↳Categoria
-  Nombre_Categoria VARCHAR (20)
-  URL_Categoria varchar (500)
+  Nombre_Categoria VARCHAR (20) (Nombre de la categoría; deportes, internacional, policial, etc.)
+  URL_Categoria varchar (500) (Link donde se encuentran las noticias de esa categoría)
   
  
