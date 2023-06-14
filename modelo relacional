@@ -1,0 +1,6 @@
+Medio_de_prensa(PK_id_medio, Nombre_medio, Año_Fundacion, Cobertura, Sitio_Web, Nombre_Fundadores, Continente, Ciudad, Region, Pais, FK_Nombre_Usuario)
+Redes_Sociales(PK_Nombre_Usuario, Link, Plataforma, UltimaAF, Numero_seguidores, FK_id_medio)
+Noticia(PK_is_Noticia, Contenido_Noticia, Fecha_Noticia, Titulo_Noticia)
+Categoría(PK_id_Categoría, Nombre_Categoría, URL_Categoría)
+Tiene(PK_(FK_id_medio, FK_id_Categoría))
+Contiene(PK_(FK_id_medio, FK_id_Noticia))
